@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name = %q{url_shortener}
-  s.version = "0.0.6"
+  s.version = "0.0.6.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nasir Jamal"]
-  s.date = %q{2009-11-26}
+  s.date = %q{2011-03-07}
   s.description = %q{Url Shortener is a Ruby library / gem and API wrapper for bit.ly to shorten/expand the urls and retrieve other information about them.}
   s.email = %q{nas35_in@yahoo.com}
   s.extra_rdoc_files = ["README.rdoc"]
@@ -50,14 +50,14 @@ Gem::Specification.new do |s|
     s.specification_version = 2
     
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<httparty>, ["= 0.4.5"])
-      s.add_runtime_dependency(%q<hashie>, ["= 0.1.4"])
+      s.add_runtime_dependency(%q<httparty>)
+      s.add_runtime_dependency(%q<hashie>)
     else
-      s.add_dependency(%q<httparty>, ["= 0.4.5"])
-      s.add_dependency(%q<hashie>, ["= 0.1.4"])
+      s.add_dependency(%q<httparty>)
+      s.add_dependency(%q<hashie>)
     end
   else
-    s.add_dependency(%q<httparty>, ["= 0.4.5"])
-    s.add_dependency(%q<hashie>, ["= 0.1.4"])
+    s.add_dependency(%q<httparty>)
+    s.add_dependency(%q<hashie>)
   end
 end
